@@ -47,6 +47,7 @@ box-sizing: inherit;
 padding: 4rem 1rem 10rem 1rem;
 max-width: 1200px;
 margin: 0 auto;
+margin-bottom: 10rem;
 }
 
 #intro .name{
@@ -91,12 +92,12 @@ margin: 0 auto;
 padding: 4rem 0;
 }
 .button{ 
-text-decoration: none; 
-padding: .5rem; 
-background-color: var(--magenta); 
-color: white;
+text-decoration: none;
+padding: .5rem;
+background-color: var(--magenta);
+color: white; 
 border-radius: .5rem; 
-font-family: var(--mono); 
+font-family: var(--mono);
 }
 .button:hover{
 background-color: var(--hotmag);
@@ -109,32 +110,59 @@ margin-top: 3rem;
 }
 
 /*nav section */
+nav{
+font-family: var(--mono);
+font-size: 80%;
+padding: 4rem 1rem;
+}
+nav h1 a{
+font-family: var(--sans);
+}
 nav ul{
+margin: 0;
+padding: 0;
 list-style-type: none;
 display: flex;
 flex-flow: row wrap;
-gap: 4rem;
+gap: 2rem;
 justify-content: center;
+align-items: center;
 }
-nav ul li:first-child{
+nav li:first-child{
 flex-basis: 100%;
 text-align: center;
 }
 nav ul a{
 text-decoration: none;
+display: block;
 color: var(--white);
 }
 
-nav ul li a img{
+.pic{
 background-color: var(--equa);
 }
 
-nav ul li a img:hover{
-color: var(--magenta);
+.pic:hover{
+background-color: var(--magenta);
 }
 
 nav h1[class*="fa-"]{
 font-size: 100%;
 color: var(--equa);
 }
+
+/*Responsive*/
+@media (min-width: 850px){
+    nav{
+    margin: 0 auto;
+    max-width: 1200px;
+    }
+    nav li:first-child{
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+    }
+}
+    
+
 
